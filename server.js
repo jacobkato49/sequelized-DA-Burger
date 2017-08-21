@@ -8,6 +8,7 @@ const handleBars = require("express-handlebars");
 const app= express();
 
 
+
 /*******************Middleware******************/
 //serve static content for the app to the "public" directory in the app directory
 app.use(express.static(process.cwd()+ "/public"));
