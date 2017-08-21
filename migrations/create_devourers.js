@@ -7,6 +7,7 @@ module.exports ={
 
     //new table
     return queryInterface.createTable("devourers", {
+      //columns
       id: {
         allowNull: false,
         autoIncrement: true,
