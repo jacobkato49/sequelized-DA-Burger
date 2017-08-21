@@ -1,6 +1,6 @@
 //npm packages
 const express= require("express");
-const router = express.Router();
+var router = express.Router();
 const models = require("../models"); /**Gets the burger models**/
 
 
@@ -59,7 +59,7 @@ router.post("/burger/create", function(req,res){
 router.post("/burger/eat/:id", function(req,res){
 
   //no name will be anonymous
-  if(req.body.burgerEater == "" || req.body.burgerEater == null){
+  if(req.body.burgerEater === "" || req.body.burgerEater == null){
     req.body.burgerEater = "Anonymous";
   }
 
