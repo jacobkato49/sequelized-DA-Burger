@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const handleBars = require("express-handlebars");
+const Sequelize = require("sequelize");
 
 //setting up the app to access express
 const app= express();

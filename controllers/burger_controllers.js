@@ -1,14 +1,14 @@
 //npm packages
 const express= require("express");
 var router = express.Router();
-const models = require("../models"); /**Gets the burger models**/
+var models = require("../models"); /**Gets the burger models**/
 
 
 //extracts the sequelize connection from the models object
-const sequelizeConnect = models.sequelize;
+var sequelizeConnection = models.sequelize;
 
 //sync the table(s)
-sequelizeConnect.sync();
+sequelizeConnection.sync();
 
 /**********Routes**********/
 
